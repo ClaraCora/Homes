@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能家居监控系统</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏠 智能家居监控系统</h1>
+            <div class="header-info">
+                <span id="update-time">更新时间: --</span>
+                <button id="refresh-btn" onclick="refreshData()">🔄 刷新</button>
+            </div>
+        </header>
+
+        <div class="summary-panel">
+            <div class="summary-card">
+                <div class="card-icon">🚪</div>
+                <div class="card-content">
+                    <div class="card-label">门窗状态</div>
+                    <div class="card-value">
+                        <span id="windows-open">0</span>/<span id="windows-total">0</span> 窗开启
+                        <span id="doors-open">0</span>/<span id="doors-total">0</span> 门开启
+                    </div>
+                </div>
+            </div>
+            
+            <div class="summary-card">
+                <div class="card-icon">💡</div>
+                <div class="card-content">
+                    <div class="card-label">电器状态</div>
+                    <div class="card-value">
+                        <span id="appliances-on">0</span>/<span id="appliances-total">0</span> 设备运行中
+                    </div>
+                </div>
+            </div>
+            
+            <div class="summary-card">
+                <div class="card-icon">🌡️</div>
+                <div class="card-content">
+                    <div class="card-label">平均温度</div>
+                    <div class="card-value" id="avg-temp">-- °C</div>
+                </div>
+            </div>
+            
+            <div class="summary-card">
+                <div class="card-icon">💧</div>
+                <div class="card-content">
+                    <div class="card-label">平均湿度</div>
+                    <div class="card-value" id="avg-humidity">-- %</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="home-map-container">
+                <h2>家居平面图</h2>
+                <svg id="home-map" viewBox="0 0 600 600">
+                    <!-- 房间将通过 JavaScript 动态生成 -->
+                </svg>
+            </div>
+
+            <div class="details-panel">
+                <h2>房间详情</h2>
+                <div id="room-details">
+                    <!-- 房间详情将通过 JavaScript 动态生成 -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+

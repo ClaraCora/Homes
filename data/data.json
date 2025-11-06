@@ -1,0 +1,67 @@
+{
+  "timestamp": "2025-11-06T10:30:00",
+  "rooms": {
+    "living_room": {
+      "name": "客厅",
+      "position": {"x": 150, "y": 150},
+      "temperature": 22.5,
+      "humidity": 55,
+      "windows": [
+        {"id": "win_lr_1", "name": "南窗", "status": "closed", "position": {"x": 150, "y": 250}}
+      ],
+      "appliances": [
+        {"id": "tv_1", "name": "电视", "type": "tv", "status": "on", "position": {"x": 120, "y": 150}},
+        {"id": "ac_1", "name": "空调", "type": "air_conditioner", "status": "on", "position": {"x": 180, "y": 150}}
+      ]
+    },
+    "bedroom": {
+      "name": "卧室",
+      "position": {"x": 400, "y": 150},
+      "temperature": 21.8,
+      "humidity": 58,
+      "windows": [
+        {"id": "win_br_1", "name": "东窗", "status": "open", "position": {"x": 500, "y": 150}}
+      ],
+      "doors": [
+        {"id": "door_br_1", "name": "卧室门", "status": "closed", "position": {"x": 350, "y": 150}}
+      ],
+      "appliances": [
+        {"id": "light_1", "name": "灯", "type": "light", "status": "off", "position": {"x": 400, "y": 150}},
+        {"id": "ac_2", "name": "空调", "type": "air_conditioner", "status": "off", "position": {"x": 430, "y": 130}}
+      ]
+    },
+    "kitchen": {
+      "name": "厨房",
+      "position": {"x": 150, "y": 400},
+      "temperature": 24.2,
+      "humidity": 62,
+      "windows": [
+        {"id": "win_kt_1", "name": "西窗", "status": "open", "position": {"x": 100, "y": 400}}
+      ],
+      "doors": [
+        {"id": "door_kt_1", "name": "厨房门", "status": "open", "position": {"x": 200, "y": 350}}
+      ],
+      "appliances": [
+        {"id": "fridge_1", "name": "冰箱", "type": "refrigerator", "status": "on", "position": {"x": 130, "y": 420}},
+        {"id": "light_2", "name": "灯", "type": "light", "status": "on", "position": {"x": 150, "y": 400}}
+      ]
+    },
+    "bathroom": {
+      "name": "卫生间",
+      "position": {"x": 400, "y": 400},
+      "temperature": 23.5,
+      "humidity": 70,
+      "windows": [
+        {"id": "win_bt_1", "name": "北窗", "status": "closed", "position": {"x": 400, "y": 350}}
+      ],
+      "doors": [
+        {"id": "door_bt_1", "name": "卫生间门", "status": "closed", "position": {"x": 350, "y": 400}}
+      ],
+      "appliances": [
+        {"id": "exhaust_1", "name": "排气扇", "type": "exhaust_fan", "status": "off", "position": {"x": 400, "y": 380}},
+        {"id": "light_3", "name": "灯", "type": "light", "status": "on", "position": {"x": 400, "y": 400}}
+      ]
+    }
+  }
+}
+
