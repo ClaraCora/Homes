@@ -23,7 +23,7 @@
 ## 📁 项目结构
 
 ```
-Home/
+Homes/
 ├── app.py                 # Flask 后端服务
 ├── requirements.txt       # Python 依赖包
 ├── run.sh                # 启动脚本
@@ -49,7 +49,7 @@ Home/
 
 1. **克隆项目**
    ```bash
-   git clone https://github.com/ClaraCora/Home.git
+   git clone https://github.com/ClaraCora/Homes.git
    cd Home
    ```
 
@@ -310,7 +310,7 @@ ClaraCora
 
 ## 🔗 相关链接
 
-- GitHub: [https://github.com/ClaraCora/Home](https://github.com/ClaraCora/Home)
+- GitHub: [https://github.com/ClaraCora/Homes](https://github.com/ClaraCora/Homes)
 - Flask 文档: [https://flask.palletsprojects.com/](https://flask.palletsprojects.com/)
 
 ## 📮 联系方式
